@@ -1,0 +1,28 @@
+{
+  "configs": [
+    "user-api-test-suite.xml",
+    "user-api.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:user-api:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.3.0",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": [
+        "api/user-api.raml",
+        "log4j2.xml",
+        "user-api.xml",
+        "log4j2-test.xml"
+      ],
+      "includeTestDependencies": "true",
+      "exportedPackages": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

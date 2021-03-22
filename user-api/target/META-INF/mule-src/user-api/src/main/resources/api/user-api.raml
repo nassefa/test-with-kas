@@ -1,0 +1,68 @@
+#%RAML 1.0
+title: user-api
+#baseUri: http://localhost:8080/user
+
+/user:
+  description: retrive user information
+  get:
+    queryParameters:
+     id:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                id: "123",
+                fname: "Simone",
+                lname: "Dirsha",
+                age: 8 month
+              }
+      400:
+        body:
+          application/json:
+            example:
+              {
+                message: "user not found"
+              }
+  post:
+    responses:
+      201:
+        body:
+          application/json:
+            examples:
+              {
+                id: 123,
+                fname: "Simone",
+                lname: "Dirsha",
+                age: 8 month
+              }      
+            
+  /address:
+    description: retrive user address 
+    get:
+      responses:
+        200:
+      body:
+        application/json:
+          example:
+            {
+              street: "Apple Harvest circle",
+              city: "Germantown",
+              state: "MD",
+              zip: "20562"
+            }
+    post:
+      responses:
+       201:
+      body:
+        application/json:
+          example:
+            {
+              street: "Apple Harvest circle",
+              city: "Germantown",
+              state: "MD",
+              zip: "20562"
+            }
+            
+          
