@@ -85,9 +85,9 @@
 					<goal>read-project-properties</goal>
 					</goals>
 					<configuration>
-					<files>
+					<!--<files>
 					<file>src/main/resources/app.properties</file>
-					</files>
+					</files> -->
 					</configuration>
 					</execution>
 					</executions>
