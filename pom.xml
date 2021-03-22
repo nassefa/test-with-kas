@@ -37,7 +37,7 @@
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<applicationName>basics</applicationName>
+						<applicationName>${name}</applicationName>
 						<environment>${anypoint.environment}</environment>
 						<region>${region}</region>
 						<workers>1</workers>
@@ -145,6 +145,14 @@
             <layout>default</layout>
         </repository>
     </repositories>
+	<distributionManagement>
+       <repository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Releases Repository</name>
+            <url>https://repository.mulesoft.org/releases/</url>
+            <layout>default</layout>
+        </repository>
+	</distributionManagement>
     <pluginRepositories>
         <pluginRepository>
             <id>mulesoft-releases</id>
